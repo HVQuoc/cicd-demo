@@ -19,4 +19,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: quochoangcicd
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
